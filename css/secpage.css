@@ -1,22 +1,101 @@
-footer {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('fonts/stylesheet.css')
+
+/* @font-face {
+    font-family: "Gotham-Book"; 
+    src: url("fonts/Gotham-Book.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;  */
+  /* }  */
+body{
+    /* font-family: "Inter"; */
+    font-family:"Gotham Pro";
+}  
+
+
+header {
     background-color: #f8f9fa;
     padding: 20px 0;
     width: 100%;
     height: 130px;
     position: relative;
 }
+
+.navbar {
+    height: 100%;
+}
+
+.navbar-brand img {
+    max-height: 90px; /* Увеличьте или уменьшите по необходимости */
+    width: auto;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: #166A5B; /* Используем зеленый цвет для ссылок */
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #0f4d3f; /* Немного темнее при наведении */
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+    background-color: #e9ecef;
+}
+
+/* Стили для иконок социальных сетей */
+.nav-link i {
+    font-size: 1.2rem;
+}
+
+/* Стили для мобильного меню */
+@media (max-width: 991px) {
+    header {
+        height: auto;
+    }
+
+    .navbar-collapse {
+        background-color: #f8f9fa;
+    }
+
+    .navbar-nav {
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+}
+
+/* Дополнительные стили из предоставленного CSS */
 .text-green {
     color: #166A5B;
 }
+
 .footer-logo img {
     max-height: 50px;
     width: 50px;
 }
+
 .footer-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .footer-nav ul {
     margin-bottom: 0;
 }
@@ -32,7 +111,7 @@ footer {
     justify-content: space-between;
 }
 .product-image {
-    max-width: 50%;
+    max-width: 70%;
     height: auto;
 }
 .product-thumbnails {
@@ -55,16 +134,16 @@ footer {
     font-size: 18px;
 }
 .table {
-    margin-top: 10px;
+    margin-top: 50px;
     background-color:#f8f9fa
 }
 
 .benefit-card {
     border: 1px solid #000;
     padding: 10px;
-    margin-bottom: 20px;
-    width: 310px;
-    height: 380px;
+    width: 100%;
+    height: 200px;
+    margin: 10px 5px;
 }
 .benefit-header {
     display: flex;
@@ -85,5 +164,118 @@ footer {
 }
 .benefit-header h5 {
     margin: 0;
-    font-size: 18px;
+    font-size: 14px;
+}
+.text-uppercase{
+    color: #166A5B;
+    font-size: 16px;
+
+}
+.benefit-card p{
+    font-size: 10px;
+}
+
+section {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+    width: auto;
+}
+
+.list-inline {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.list-inline-item {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.list-inline-item:last-child {
+    margin-right: 0;
+}
+
+.text-green {
+    color: #166A5B;
+}
+
+.text-decoration-none:hover {
+    text-decoration: underline !important;
+}
+
+.btn-group .btn {
+    color: #166A5B;
+    background-color: transparent;
+    border: 1px solid #166A5B;
+}
+
+.btn-group .btn:hover,
+.btn-group .btn:focus {
+    background-color: #e9ecef;
+}
+
+.dropdown-menu {
+    min-width: 5rem;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0.25rem;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    color: #1e2125;
+    background-color: #e9ecef;
+}
+
+@media (max-width: 991px) {
+    .footer-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-brand {
+        margin-bottom: 15px;
+    }
+
+    .list-inline {
+        margin-bottom: 15px;
+    }
+
+    .list-inline-item {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .btn-group {
+        align-self: flex-start;
+    }
 }

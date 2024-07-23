@@ -8,50 +8,62 @@
     <link rel="stylesheet" href="css/secpage.css">
   </head>
   <body>
-    <header>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-10">
-                    <nav class="footer-nav">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item">
-                                <a class="text-green text-decoration-none" href="#">Главная</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-green text-decoration-none" href="#">Продукция</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-green text-decoration-none" href="#">Статьи</a>
-                            </li>
-                        </ul>
-                        <a class="navbar-brand d-none d-lg-inline-block" href="/">
-                            <img class="img-optimized img-fluid" src="images/Luffacci logo Corel 1.svg" alt="Luffacci">
-                        </a>
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item">
-                                <a class="text-green text-decoration-none" href="#">Патенты</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-green text-decoration-none" href="#">Контакты</a>
-                            </li>
-                            <!-- <li class="list-inline-item">
-                                <a class="text-green text-decoration-none" href="#">Ru</a>
-                            </li> -->
-                        </ul>
-                        <div class="btn-group" role="group">
-                            <button id="btnGroupDrop1" type="button" class="btn btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                              Ru
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                              <li><a class="dropdown-item" href="#">Uz</a></li>
-                              <li><a class="dropdown-item" href="#">En</a></li>
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand d-inline-block d-lg-none" href="/">
+                    <img src="assets/img/logo.svg" alt="Luffacci">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="menu" style="">
+                    <ul class="navbar-nav me-auto navbar-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Главная<span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Продукция</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand d-none d-lg-inline-block text-center" href="/">
+                        <img class="img-optimized img-fluid" src="images/Luffacci logo Corel 1.svg" alt="Luffacci">
+                    </a>
+                    <ul class="navbar-nav ms-auto navbar-lg justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Патенты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://css.biz/#"><i class="fs-5 bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://css.biz/#"><i class="fs-5 bi bi-youtube"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://css.biz/#"><i class="fs-5 bi bi-telegram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://css.biz/#"><i class="fs-5 fa-brands fa-weixin pt-2"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Ru</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Uz</a></li>
+                                <li><a class="dropdown-item" href="#">En</a></li>
                             </ul>
-                        </div>    
-                    </nav>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
+        </nav>
     </header>
+
     <div class="container">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Главная</a></li>
@@ -101,7 +113,7 @@
 
     <section>
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-end">
                 <div class= "col-6" >
                     <img class="product-image" src="images/sec1.png" alt="Product Image">
                         <div class="product-thumbnails">
@@ -114,7 +126,7 @@
 
                 </div>
                 <div class="col-6">
-                    <div class="row">
+                    <div class="row justify-content-center">
                         <div class="product-details col-7">
                             <h1>LUFFACCI PRIME</h1>
                             <p>Из неокрашенной люффы</p>
@@ -150,7 +162,7 @@
 
     <section>
         <div class="container">
-            <h1 class="text-center">Ключевые отличительные преимущества мочалки Luffacci</h1>
+            <h1 class="text-center text-uppercase">Ключевые отличительные преимущества мочалки Luffacci</h1>
             <div class="row justify-content-center">
                 <div class="col-md-2 col-lg-4">
                     <div class="benefit-card">
@@ -206,9 +218,7 @@
                         <p>Обеспечивается тем, что мочалку Luffacci после использования достаточно промыть под струей воды, выжать и повесить сушиться.</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-lg-2">
-
-                </div>
+                <div class="col-md-2 col-lg-2"></div>
                 <div class="col-md-2 col-lg-4">
                     <div class="benefit-card">
                         <div class="benefit-header">
@@ -227,9 +237,8 @@
                         <p>Создается способностью мочалки Luffacci при ежедневном использовании сохранить свои моющие, очищающие и массажные свойства не менее одного месяца.</p>
                     </div>
                 </div>
-                <div class="col-md-2 col-lg-2">
-                     
-                </div>
+                <div class="col-md-2 col-lg-2"></div>     
+                
                 <div class="col-md-2 col-lg-4">
                     <div class="benefit-card">
                         <div class="benefit-header">
@@ -280,7 +289,7 @@
                                 <a class="text-green text-decoration-none" href="#">Ru</a>
                             </li> -->
                         </ul>
-                        <div class="btn-group" role="group">
+                        <!-- <div class="btn-group" role="group">
                             <button id="btnGroupDrop1" type="button" class="btn btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                               Ru
                             </button>
@@ -288,7 +297,7 @@
                               <li><a class="dropdown-item" href="#">Uz</a></li>
                               <li><a class="dropdown-item" href="#">En</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </nav>
                 </div>
             </div>
