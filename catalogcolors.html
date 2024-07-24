@@ -1,27 +1,337 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <title>Catalog colors</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/catalog.css">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand  d-inline-block d-lg-none" href="/">
+                    <img src="assets/img/logo.svg" alt="Luffacci">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="menu" style="">
+                    <ul class="navbar-nav me-auto navbar-lg">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Главная<span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Продукция</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand d-none d-lg-inline-block text-center" href="/">
+                        <img class="img-optimized img-fluid" src="images/Luffacci logo Corel 1.svg" alt="Luffacci">
+                    </a>
+                    <ul class="navbar-nav ms-auto navbar-lg justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Патенты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://css.biz/#"><i class="fs-5 bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://css.biz/#"><i class="fs-5 bi bi-youtube"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://css.biz/#"><i class="fs-5 bi bi-telegram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://css.biz/#"><i class="fs-5 fa-brands fa-weixin pt-2"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">RU</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Uz</a></li>
+                                <li><a class="dropdown-item" href="#">En</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <div class="container">
+        <ol class="breadcrumb py-5">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Каталог</a></li>
+            <li class="breadcrumb-item active">Карточка товара</li>
+        </ol>
+    </div>  
+    
+    <section>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class= "col-6 py-5" >
+                    <img class="product-image" src="images/cat1.png" alt="Product Image">
+                        <div class="product-thumbnails">
+                            <img src="images/sec2.png" alt="Thumbnail 1">
+                            <img src="images/sec3.png" alt="Thumbnail 2">
+                            <img src="images/sec4.png" alt="Thumbnail 3">
+                            <img src="images/sec5.png" alt="Thumbnail 4">
+                            <img src="images/sec6.png" alt="Thumbnail 4">
+                        </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+                </div>
+                <div class="col-6 py-5">
+                    <div class="row justify-content-center">
+                        <div class="product-details col-7">
+                            <h1 class="py-3" style="font-weight: bold;">LUFFACCI PRIME</h1>
+                            <p>Растительные красители</p>
+                            <ul class="color-list py-3">
+                              <li class="color-item">
+                                  <div class="color-circle color-kurkuma"></div>
+                                  <span class="color-name">Куркума</span>
+                              </li>
+                              <li class="color-item">
+                                  <div class="color-circle color-marena"></div>
+                                  <span class="color-name" style="color: #E6803D;">Марена</span>
+                              </li>
+                              <li class="color-item">
+                                  <div class="color-circle color-indigo"></div>
+                                  <span class="color-name" style="color: #3B4A5A;">Индиго</span>
+                              </li>
+                            </ul>
+                            <table class="table table-striped-columns">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Наименование</th>
+                                    <th scope="col">Размер, см</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>PRIME – L</td>
+                                    <td>33 x 12,5</td>
+                                </tr>
+                                <tr>
+                                    <td>PRIME - M</td>
+                                    <td>33 x 11</td>
+                                </tr>
+                                </tbody>
+                            </table>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center text-uppercase">Ключевые отличительные <br> преимущества мочалки Luffacci</h2>
+            <div class="row py-5">
+                <div class="col-md-2 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="row col-lg-2">
+                                <span>1</span>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12">    
+                            <h6>БЕЗОПАСНОСТЬ ДЛЯ ЗДОРОВЬЯ ПОЛЬЗОВАТЕЛЕЙ И ВОЗМОЖНОСТЬ МНОГОРАЗОВОГО ИСПОЛЬЗОВАНИЯ</h6>
+                            <p>Мочалки Luffacci достигается за счет инновационной конструкции всего из двух слоев тонковолокнистой люффы без промежуточного слоя между ними, обуславливающей сквозную промывку, сквозную вентиляцию и быстрое высыхание, то есть отсутствие загрязнений и бактериальной среды в мочалке после использования, что делает мочалку безопасной для здоровья человека при последующем использовании.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="row col-lg-2">
+                                <span>2</span>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12">    
+                            <h6>ПРЕМИАЛЬНЫЙ ДЕЛИКАТНЫЙ МОЮЩИЙ, ОЧИЩАЮЩИЙ, МАССАЖНЫЙ И ОМОЛАЖИВАЮЩИЙ ЭФФЕКТ</h6>
+                            <p>Мочалки Luffacci создается воздействием на кожу уникальной природной сетчатой текстуры эластичных волокон тонковолокнистой люффы.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="row col-lg-2">
+                                <span>3</span>
+                            </div>
+                        </div>
+                        <div>    
+                            <h6>УСТОЙЧИВОСТЬ К ФОРМИРОВАНИЮ БАКТЕРИАЛЬНОЙ СРЕДЫ</h6>
+                            <p>Мочалки Luffacci охватывающий не только ингредиенты, но и весь производственный процесс способствует этичному выбору и обеспечивает высокий уровень гарантии для потребителей, ищущих веганские продукты.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="row col-lg-2">
+                                <span>4</span>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12">    
+                            <h6>ОЗДОРОВИТЕЛЬНАЯ И ПРОФИЛАКТИЧЕСКАЯ СПОСОБНОСТЬ</h6>
+                            <p>Мочалки Luffacci обуславливается ее изготовлением из тонковолокнистой люффы, выращенной в традициях органического земледелия. Упаковка, которая используется для мочалки Luffacci, биоразлагаемая, изготовлена из экологически чистых источников и пригодна для вторичной переработки.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="row col-lg-2">
+                                <span>5</span>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12">    
+                            <h6>ВЕГАНСКИЙ ПРИНЦИП</h6>
+                            <p>Мочалки Luffacci создается ее эргономичными размерами и формой, а также способностью становиться в воде объемной, нежной и эластичной.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="row col-lg-2">
+                                <span>6</span>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12">    
+                            <h6>БИОРАЗЛАГАЕМОСТЬ И ЭКОЛОГИЧЕСКАЯ УСТОЙЧИВОСТЬ</h6>
+                            <p>Обеспечивается тем, что мочалку Luffacci после использования достаточно промыть под струей воды, выжать и повесить сушиться.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="row col-lg-2">
+                                <span>7</span>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12">
+                            <h6>ЭРГОНОМИЧНОСТЬ И КОМФОРТНОСТЬ</h6>
+                            <p>Мочалки Luffacci после использования обуславливается сквозной проветриваемостью пространственной сетчатой структурой строения волокон тонковолокнистой люффы.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="row col-lg-2">
+                                <span>8</span>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12">
+                            <h6>ОТСУТСТВИЕ НЕОБХОДИМОСТИ В ДЕЗИНФЕКЦИИ В МИКРОВОЛНОВОЙ ПЕЧИ ИЛИ СТИРКЕ В СТИРАЛЬНОЙ МАШИНЕ ПОСЛЕ ИСПОЛЬЗОВАНИЯ</h6>
+                            <p>Создается способностью мочалки Luffacci при ежедневном использовании сохранить свои моющие, очищающие и массажные свойства не менее одного месяца.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-2 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="row col-lg-2">
+                                <span>9</span>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12">
+                            <h6>БЫСТРОЕ ВЫСЫХАНИЕ</h6>
+                            <p>Мочалки Luffacci из тонковолокнистой люффы обуславливается ее функциональными свойствами, которые не могут быть созданы при изготовлении мочалки из какого-либо другого материала</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="row col-lg-2">
+                                <span>10</span>
+                            </div>
+                        </div>
+                        <div class="row col-lg-12">    
+                            <h6>ДЛИТЕЛЬНЫЙ СРОК СЛУЖБЫ</h6>
+                            <p>Мочалка Luffacci, располагая активной рабочей поверхностью из люффы не с одной, а с двух сторон, обладает вдвое повышенным ресурсом пользования.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                  <div class="benefit-card">
+                      <div class="benefit-header">
+                          <div class="row col-lg-2">
+                              <span>11</span>
+                          </div>
+                      </div>
+                      <div class="row col-lg-12">    
+                          <h6>НЕЗАМЕНИМОСТЬ</h6>
+                          <p>мочалки Luffacci из тонковолокнистой люффы обуславливается ее функциональными свойствами, которые не могут быть созданы при изготовлении мочалки из какого-либо другого материала</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-4">
+                  <div class="benefit-card">
+                      <div class="benefit-header">
+                          <div class="row col-lg-2">
+                              <span>12</span>
+                          </div>
+                      </div>
+                      <div class="row col-lg-12">    
+                          <h6>ОБЕСПЕЧИВАЕТ ВЫГОДУ ПОКУПАТЕЛЮ</h6>
+                          <p>Мочалка Luffacci, располагая активной рабочей поверхностью из люффы не с одной, а с двух сторон, обладает вдвое повышенным ресурсом пользования.</p>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-14 py-5">
+                    <nav class="footer-nav">
+                        <a class=" d-none d-lg-inline-block" href="/">
+                            <img class="img-optimized img-fluid" src="images/Luffacci logo Corel 1.svg" alt="Luffacci">
+                        </a>
+
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item">
+                                <a class="text-black text-decoration-none" href="#">Главная</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="text-black text-decoration-none" href="#">Продукция</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="text-black text-decoration-none" href="#">Статьи</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="text-black text-decoration-none" href="#">Патенты</a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="text-black text-decoration-none" href="#">Контакты</a>
+                            </li>
+                           
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
   </body>
 </html>
