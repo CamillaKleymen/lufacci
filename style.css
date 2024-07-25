@@ -119,7 +119,6 @@ header {
 
 .navbar-nav {
     align-items: center;
-    color: #166A5B;
 }
 
 .nav-item {
@@ -169,10 +168,13 @@ header {
 }
 
 /* Дополнительные стили из предоставленного CSS */
-.footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-    width: 100%;
+.text-green {
+    color: #166A5B;
+}
+
+.footer-logo img {
+    max-height: 50px;
+    width: 50px;
 }
 
 .footer-nav {
@@ -181,29 +183,9 @@ header {
     align-items: center;
 }
 
-.navbar-brand img {
-    max-height: 50px;
-    width: auto;
-}
-
-.list-inline {
+.footer-nav ul {
     margin-bottom: 0;
-    padding-left: 0;
 }
-
-.list-inline-item {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-.list-inline-item:last-child {
-    margin-right: 0;
-}
-
-.text-green {
-    color: #166A5B;
-}
-
 .breadcrumb-item a {
     color: #585858; 
     text-decoration: none;
@@ -283,7 +265,7 @@ header {
 
 .footer {
     background-color: #f8f9fa;
-    padding: 20px 0;
+    padding: 20px;
     width: 100%;
 }
 
@@ -316,6 +298,9 @@ header {
     color: #166A5B;
 }
 
+.text-decoration-none:hover {
+    text-decoration: underline !important;
+}
 
 .btn-group .btn {
     color: #166A5B;
@@ -515,11 +500,6 @@ header {
     width: 50%;
 }
 
-.form-control{
-    border-color: #1e2125;
-    box-shadow:#1e2125
-}
-
 section {
     padding: 40px 20px;
     background-color: #ffffff;
@@ -626,7 +606,6 @@ button:hover {
     justify-content: space-around;
     align-items: center;
     margin-top: 20px;
-    color:#242424
 }
 .contact-info div {
     display: flex;
