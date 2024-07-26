@@ -657,3 +657,9 @@ cursor: pointer;
 width: 60%;
 margin-left: 180px;
 }
+.card-certificate{
+    width:15rem;
+}
+.arrow-to-bottom {
+    margin-bottom: 50%;
+}
