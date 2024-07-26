@@ -663,3 +663,46 @@ margin-left: 180px;
 .arrow-to-bottom {
     margin-bottom: 50%;
 }
+
+.container-offer{
+    width: 100%;
+    margin: 80px;;
+}
+.container-offer h1{
+    color: #166A5B;
+    font-size: 24px; 
+    font-weight: bold;
+}
+.container-offer p{
+    width: 100%;
+}
+
+.offer-image{
+    width: 70%;
+    height: 50%;
+}
+
+.container-problem p{
+    width: 100%;
+}
+.card-offer{
+    width: 30%;
+   
+   
+}
+ 
+
+.info-block {
+    background-color:rgba(193, 229, 223, 0.7);
+    padding: 20px;
+    padding-left: 40px;
+    margin: 20px 0;
+    border-radius: 0px;
+}
+
+.info-block p {
+    margin: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6A6A6A;
+}
