@@ -155,7 +155,7 @@ header {
     font-size: 1.2rem;
 }
 
-/* Стили для мобильного меню */
+/* Стили для мобильного меню
 @media (max-width: 991px) {
     header {
         height: auto;
@@ -172,7 +172,7 @@ header {
     .nav-item {
         margin: 5px 0;
     }
-}
+} */
 
 /* Дополнительные стили из предоставленного CSS */
 .footer {
@@ -206,9 +206,9 @@ header {
     margin-right: 0;
 }
 
-.text-green {
+/* .text-green {
     color: #166A5B;
-}
+} */
 
 .breadcrumb-item a {
     color: #585858; 
@@ -250,7 +250,7 @@ header {
 }
 
 .benefit-card {
-    border: 1px solid #166A5B;
+    border: 1px var(--text-green);
     padding: 20px;
     width: 100%;
     height: 380px;
@@ -319,10 +319,12 @@ header {
 }
 
 .text-green {
-    color: #166A5B;
+    color: var(--text-green);
 }
 
-
+.text-black{
+    color:var(--text-black)
+}
 .btn-group .btn {
     color: #166A5B;
     background-color: transparent;
@@ -365,7 +367,7 @@ header {
     background-color: #e9ecef;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
     .footer-nav {
         flex-direction: column;
         align-items: flex-start;
@@ -387,7 +389,7 @@ header {
     .btn-group {
         align-self: flex-start;
     }
-}
+} */
 
 .container h2{
     color: #166A5B;
@@ -735,3 +737,4 @@ margin-left: 180px;
     padding-top: 0px;
     padding-bottom: 30px;
 } */
+
